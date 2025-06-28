@@ -2,6 +2,8 @@ Esse projeto é um projeto da minha faculdade com o cunho de realizar um site pa
 resumindo, algum projeto que vá ajudar a sociedade da area onde eu moro, como aqui geralmente tem muitos cães soltos, idealizei e 
 codei esse site, simulando o endereço de uma casa de cuidados com cães e gatos abandonados e/ou resgatados de condições precarias.
 
+OBS: O codigo vai ser rodado em LOCALPORT
+
 Linguagens utilizadas:
  1. HTMl/CSS
  2. Javascript
