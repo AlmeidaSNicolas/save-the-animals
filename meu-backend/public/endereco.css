@@ -1,4 +1,4 @@
-/* ──────────── Reset e configurações globais ──────────── */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   color: #333;
 }
 
-/* ──────────── Barra de navegação ──────────── */
+
 .navegação {
   background-color: #ff914d;
   padding: 15px;
@@ -32,7 +32,7 @@ body {
   border-bottom: 2px solid #fff;
 }
 
-/* ──────────── Cabeçalho (hero) ──────────── */
+
 .projeto {
   background-color: #ffe7d1;
   padding: 40px 20px;
@@ -51,38 +51,37 @@ body {
   font-weight: normal;
 }
 
-/* ──────────── Seção título/descrição antes do mapa ──────────── */
-.animals {           /* Mantemos o nome “animals” para reaproveitar o estilo */
+
+.animals {           
   text-align: center;
   margin: 40px 0 20px;
   font-size: 2.2em;
   color: #ff914d;
 }
 
-/* ──────────── Mapa ──────────── */
-.map-container {     /* Wrapper para centralizar e limitar largura */
+.map-container {     
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
 .map-container iframe {
-  width: 90%;             /* Responsivo */
-  max-width: 800px;       /* Mesma largura do conteúdo principal */
+  width: 90%;            
+  max-width: 800px;       
   height: 450px;
   border: 0;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* ──────────── Linha separadora ──────────── */
+
 hr {
   border: none;
   border-top: 2px solid #ddd;
   margin: 20px 0;
 }
 
-/* ──────────── Rodapé ──────────── */
+
 .rodape {
     background-color: #333;
     color: white;

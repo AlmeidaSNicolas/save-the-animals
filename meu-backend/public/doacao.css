@@ -1,24 +1,23 @@
-/* ------------------ RESET BÁSICO ------------------ */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ------------------ VARIÁVEIS DE COR ------------------ */
-:root {
-  --cor-primaria: #ff914d;   /* laranja vivo (destaque)        */
-  --cor-bg-destaque: #ffe7d1;/* laranja bem claro (banner)     */
-  --cor-escura: #333;        /* cinza‑escuro (texto/rodapé)    */
-  --cor-clara: #ffffff;      /* branco                         */
-  --cor-fundo: #f9f9f9;      /* cinza muito claro (body)       */
 
+:root {
+  --cor-primaria: #ff914d;   
+  --cor-bg-destaque: #ffe7d1;
+  --cor-escura: #333;        
+  --cor-clara: #ffffff;      
+  --cor-fundo: #f9f9f9;      
   --radius: 0.5rem;
   --transition: 0.3s ease;
   --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ------------------ BODY ------------------ */
+
 body {
   font-family: var(--font-base);
   line-height: 1.6;
@@ -29,7 +28,7 @@ body {
   flex-direction: column;
 }
 
-/* ------------------ NAVEGAÇÃO ------------------ */
+
 .navegação {
   background: var(--cor-primaria);
   padding: 15px;
@@ -50,19 +49,19 @@ body {
   border-bottom: 2px solid var(--cor-clara);
 }
 
-/* ------------------ DIVISÓRIA ------------------ */
+
 hr {
   border: none;
   border-top: 2px solid #ddd;
   margin: 20px 0;
 }
 
-/* ------------------ CABEÇALHO & FORM ------------------ */
+
 .header {
   max-width: 680px;
   width: 90%;
   margin: 2rem auto;
-  background: var(--cor-clara);          /* branco para contraste */
+  background: var(--cor-clara);          
   padding: 2rem 2.5rem;
   border-radius: var(--radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -78,16 +77,8 @@ hr {
   margin-bottom: 2rem;
 }
 
-/* Caixa de destaque opcional atrás do <header> (só descomentar)
-.header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--cor-bg-destaque);
-  z-index: -1;
-  border-radius: var(--radius);
-}
-*/
+
+
 
 form {
   display: grid;
@@ -134,11 +125,11 @@ button[type="submit"] {
 
 button[type="submit"]:hover,
 button[type="submit"]:focus {
-  background: #e57a34; /* laranja um pouco mais escuro */
+  background: #e57a34; 
   transform: translateY(-2px);
 }
 
-/* ------------------ RODAPÉ ------------------ */
+
 .rodape {
   margin-top: auto;
   background: var(--cor-escura);
@@ -159,7 +150,7 @@ button[type="submit"]:focus {
   text-decoration: underline;
 }
 
-/* ------------------ RESPONSIVIDADE ------------------ */
+
 @media (min-width: 480px) {
   form {
     grid-template-columns: 1fr 1fr;

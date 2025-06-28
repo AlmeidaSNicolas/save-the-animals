@@ -2,7 +2,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const path    = require('path');
 
-// Cria (ou abre) banco.db na raiz do projeto
+
 const db = new sqlite3.Database(path.join(__dirname, 'banco.db'));
 
 // Cria a tabela se não existir
