@@ -7,4 +7,10 @@ Linguagens utilizadas:
  2. Javascript
  3. Node.js / Express
  4. Sqlite3 para banco de dados
- 5. API do google maps integrada para simular onde seria a nossa "sede"
+ 5. IFRAME para simular um local onde seria a nossa "sede"
+
+COMANDO PARA REALIZAR O DELETE, REALIZADO NO GITBASH, OU VOCE ALTERNA O TERMINAL DO VSCODE PARA BASH
+
+curl -X DELETE http://localhost:3000/doacoes/1
+
+o numero final vai variar do tanto de doações que voce quer testar.
