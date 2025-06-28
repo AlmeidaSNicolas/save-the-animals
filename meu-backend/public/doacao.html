@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação.casadeanimais</title>
+    <link rel="stylesheet" href="doacao.css">
+    
+</head>
+<body>
+    
+    <nav class="navegação">
+     <a href="index.html">Inicio</a>
+     <a href="#">Nosso Endereço</a>
+    </nav>
+
+    <hr>
+    
+    <header class="header">
+        <h1>Faça Sua Doação</h1>
+        <p>Contribua com nossa causa e ajude a cuidar dos animais resgatados. Sua doação faz a diferença!</p>
+
+
+        
+        <form action="/doacao" method="POST">
+
+            <h2>Formulario de Doação</h2>
+            <label for="name">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="conheceu">Onde nos Conheceu</label>
+            <input type="text" id="conheceu" name="conheceu" required>
+
+            <label for="quantia">Quantia que deseja doar</label>
+            <input type="number" id="quantia" name="quantia" required>
+
+            <button  type="submit">Enviar</button>
+
+        </form>
+    </header>
+
+    <footer class="rodape">
+        <p>Para mais informações, entre em contato conosco:</p>
+        <p>Email:casadeadoção@gmail.com</p>
+        &copy; 2025 Casa de Adoção. Todos os direitos reservados.
+        <p>Desenvolvido por <a  target="_blank"  href="https://github.com/pecasnaby">Nicolas </a>
+    </footer>
+
+</body>
+</html>

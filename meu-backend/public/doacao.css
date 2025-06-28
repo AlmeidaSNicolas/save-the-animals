@@ -1,0 +1,183 @@
+/* ------------------ RESET BÁSICO ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ VARIÁVEIS DE COR ------------------ */
+:root {
+  --cor-primaria: #ff914d;   /* laranja vivo (destaque)        */
+  --cor-bg-destaque: #ffe7d1;/* laranja bem claro (banner)     */
+  --cor-escura: #333;        /* cinza‑escuro (texto/rodapé)    */
+  --cor-clara: #ffffff;      /* branco                         */
+  --cor-fundo: #f9f9f9;      /* cinza muito claro (body)       */
+
+  --radius: 0.5rem;
+  --transition: 0.3s ease;
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------ BODY ------------------ */
+body {
+  font-family: var(--font-base);
+  line-height: 1.6;
+  background: var(--cor-fundo);
+  color: var(--cor-escura);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------ NAVEGAÇÃO ------------------ */
+.navegação {
+  background: var(--cor-primaria);
+  padding: 15px;
+  text-align: center;
+}
+
+.navegação a {
+  color: var(--cor-clara);
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color var(--transition), border-bottom var(--transition);
+}
+
+.navegação a:hover,
+.navegação a:focus {
+  color: var(--cor-escura);
+  border-bottom: 2px solid var(--cor-clara);
+}
+
+/* ------------------ DIVISÓRIA ------------------ */
+hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 20px 0;
+}
+
+/* ------------------ CABEÇALHO & FORM ------------------ */
+.header {
+  max-width: 680px;
+  width: 90%;
+  margin: 2rem auto;
+  background: var(--cor-clara);          /* branco para contraste */
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.header h1 {
+  color: var(--cor-primaria);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  margin-bottom: 2rem;
+}
+
+/* Caixa de destaque opcional atrás do <header> (só descomentar)
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cor-bg-destaque);
+  z-index: -1;
+  border-radius: var(--radius);
+}
+*/
+
+form {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+form h2 {
+  text-align: center;
+  color: var(--cor-escura);
+  margin-bottom: 0.5rem;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color var(--transition);
+}
+
+form input:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: var(--cor-primaria);
+  color: var(--cor-clara);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: #e57a34; /* laranja um pouco mais escuro */
+  transform: translateY(-2px);
+}
+
+/* ------------------ RODAPÉ ------------------ */
+.rodape {
+  margin-top: auto;
+  background: var(--cor-escura);
+  color: var(--cor-clara);
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 0.9rem;
+}
+
+.rodape a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape a:hover,
+.rodape a:focus {
+  text-decoration: underline;
+}
+
+/* ------------------ RESPONSIVIDADE ------------------ */
+@media (min-width: 480px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.25rem;
+  }
+  form h2,
+  button[type="submit"] {
+    grid-column: 1 / -1;
+  }
+  button[type="submit"] {
+    max-width: 200px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .navegação a {
+    display: block;
+    margin: 10px 0;
+  }
+}
