@@ -7,14 +7,14 @@
 
 
 :root {
-  cor-primaria: #ff914d;   
-  cor-bg-destaque: #ffe7d1;
-  cor-escura: #333;        
-  cor-clara: #ffffff;      
-  cor-fundo: #f9f9f9;      
-  radius: 0.5rem;
-  transition: 0.3s ease;
-  font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --cor-primaria: #ff914d;   
+  --cor-bg-destaque: #ffe7d1;
+  --cor-escura: #333;        
+  --cor-clara: #ffffff;      
+  --cor-fundo: #f9f9f9;      
+  --radius: 0.5rem;
+  --transition: 0.3s ease;
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
