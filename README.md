@@ -5,6 +5,6 @@ codei esse site, simulando o endereço de uma casa de cuidados com cães e gatos
 Linguagens utilizadas:
  1. HTMl/CSS
  2. Javascript
- 3. Node.js
- 4. Express para banco de dados
+ 3. Node.js / Express
+ 4. Sqlite3 para banco de dados
  5. API do google maps integrada para simular onde seria a nossa "sede"
